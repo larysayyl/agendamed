@@ -4,20 +4,13 @@
   padding: 0;
 }
 
-
 body {
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: linear-gradient(
-    145deg,
-    #0f6e56 0%,
-    #1d9e75 55%,
-    #2a85c7 100%
-  );
+  background: linear-gradient(145deg, #0f6e56 0%, #1d9e75 55%, #2a85c7 100%);
 }
 
 /* ───── Layout principal ───── */
@@ -77,8 +70,6 @@ body {
   z-index: 1;
 }
 
-/* Brand */
-
 .info-brand {
   display: flex;
   align-items: center;
@@ -95,10 +86,7 @@ body {
   justify-content: center;
 }
 
-.info-brand-icon i {
-  font-size: 18px;
-  color: white;
-}
+.info-brand-icon i { font-size: 18px; color: white; }
 
 .info-brand-name {
   font-size: 18px;
@@ -106,8 +94,6 @@ body {
   color: white;
   letter-spacing: -0.2px;
 }
-
-/* Título e descrição */
 
 .info-titulo {
   font-size: 30px;
@@ -122,8 +108,6 @@ body {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.65;
 }
-
-/* Cards de benefícios */
 
 .info-beneficios {
   display: flex;
@@ -142,9 +126,7 @@ body {
   transition: background 0.2s;
 }
 
-.info-card:hover {
-  background: rgba(255, 255, 255, 0.16);
-}
+.info-card:hover { background: rgba(255, 255, 255, 0.16); }
 
 .info-card-icone {
   width: 34px;
@@ -157,18 +139,13 @@ body {
   flex-shrink: 0;
 }
 
-.info-card-icone i {
-  font-size: 17px;
-  color: white;
-}
+.info-card-icone i { font-size: 17px; color: white; }
 
 .info-card-texto {
   font-size: 14px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.92);
 }
-
-/* Badges */
 
 .info-badges {
   display: flex;
@@ -188,9 +165,7 @@ body {
   border-radius: 20px;
 }
 
-.info-badge i {
-  font-size: 13px;
-}
+.info-badge i { font-size: 13px; }
 
 /* ───── Lado direito (login) ───── */
 
@@ -203,11 +178,7 @@ body {
   padding: 40px 36px;
 }
 
-.health-glass-box {
-  width: 100%;
-}
-
-/* Cabeçalho do formulário */
+.health-glass-box { width: 100%; }
 
 .health-icon-header {
   width: 52px;
@@ -220,10 +191,7 @@ body {
   margin: 0 auto 16px;
 }
 
-.health-icon-header i {
-  font-size: 24px;
-  color: #0f6e56;
-}
+.health-icon-header i { font-size: 24px; color: #0f6e56; }
 
 .health-glass-box h2 {
   text-align: center;
@@ -240,11 +208,7 @@ body {
   margin-bottom: 28px;
 }
 
-/* Grupos de campo */
-
-.health-form-group {
-  margin-bottom: 16px;
-}
+.health-form-group { margin-bottom: 16px; }
 
 .health-form-group label {
   display: block;
@@ -287,11 +251,7 @@ body {
   box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.12);
 }
 
-.health-input-group input::placeholder {
-  color: #9ca3af;
-}
-
-/* Opções (lembrar / esqueceu) */
+.health-input-group input::placeholder { color: #9ca3af; }
 
 .health-options {
   display: flex;
@@ -330,8 +290,6 @@ body {
   text-decoration: underline;
 }
 
-/* Botão principal */
-
 .health-btn {
   width: 100%;
   padding: 12px;
@@ -346,15 +304,8 @@ body {
   transition: background 0.2s, transform 0.1s;
 }
 
-.health-btn:hover {
-  background: #085041;
-}
-
-.health-btn:active {
-  transform: scale(0.98);
-}
-
-/* Divisor */
+.health-btn:hover { background: #085041; }
+.health-btn:active { transform: scale(0.98); }
 
 .health-divider {
   display: flex;
@@ -371,30 +322,21 @@ body {
   background: #e5e7eb;
 }
 
-/* Botão secundário */
-
 .health-btn-secondary {
- 
   width: 100%;
   height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
   border-radius: 18px;
   border: 1px solid #dbe2ea;
-
   text-decoration: none;
   color: #1e293b;
-
   font-size: 12px;
   font-weight: 600;
-
   background: #ffffff;
-
   transition: 0.2s;
-
   margin: 0 auto;
 }
 
@@ -402,8 +344,6 @@ body {
   background: #f9fafb;
   border-color: #d1d5db;
 }
-
-/* Rodapé */
 
 .health-footer-links {
   text-align: center;
@@ -416,44 +356,51 @@ body {
   line-height: 1.5;
 }
 
-.dot {
-  color: #d1d5db;
-  margin: 0 4px;
-}
+.dot { color: #d1d5db; margin: 0 4px; }
 
 /* ───── Responsivo ───── */
 
 @media (max-width: 720px) {
-  .custom-container-login {
-    flex-direction: column;
-    max-width: 420px;
-    min-height: unset;
-    border-radius: 16px;
-    margin: 20px;
-  }
-
-  .info-side {
-    padding: 32px 28px;
-  }
-
-  .info-titulo {
-    font-size: 24px;
-  }
-
-  .login-side {
-    width: 100%;
-    padding: 32px 28px;
-  }
-}
-
-@media (max-width: 420px) {
   body {
     align-items: flex-start;
     padding: 16px;
   }
 
   .custom-container-login {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-height: unset;
+    border-radius: 16px;
     margin: 0;
-    border-radius: 12px;
+  }
+
+  .info-side {
+    padding: 24px 20px;
+  }
+
+  .info-titulo {
+    font-size: 20px;
+  }
+
+  .info-descricao {
+    font-size: 13px;
+  }
+
+  .info-beneficios {
+    display: none;
+  }
+
+  .info-badges {
+    display: none;
+  }
+
+  .login-side {
+    width: 100%;
+    padding: 28px 20px;
+  }
+
+  .health-glass-box h2 {
+    font-size: 20px;
   }
 }
